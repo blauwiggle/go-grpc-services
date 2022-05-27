@@ -18,7 +18,7 @@ func New() (Store, error) {
 	dbName := os.Getenv("DB_NAME")
 	dbHost := os.Getenv("DB_HOST")
 	dbPort := os.Getenv("DB_PORT")
-	dbSslmode := os.Getenv("DB_SSLMODE")
+	dbSslmode := os.Getenv("DB_SSL_MODE")
 
 	connectionString := fmt.Sprintf("user=%s password=%s dbname=%s host=%s port=%s sslmode=%s", dbUsername, dbPassword, dbName, dbHost, dbPort, dbSslmode)
 
